@@ -2,8 +2,8 @@
 &problemsize_namelist
  n_r = 48
  n_theta = 64
- nprow = 2
- npcol = 2
+ nprow = 8
+ npcol = 4
  aspect_ratio = 0.35d0
  shell_depth = 1.0d0
 /
@@ -17,7 +17,7 @@
 /
 &temporal_controls_namelist
  max_time_step = 1.0d-4
- max_iterations = 40000
+ max_iterations = 10000
  checkpoint_interval = 100000
  cflmin = 0.4d0
  cflmax = 0.6d0

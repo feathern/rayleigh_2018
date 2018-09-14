@@ -2,7 +2,7 @@
 #SBATCH --job-name outputs
 #SBATCH --qos normal
 #SBATCH --account=tutorial1
-#SBATCH --nodes 3
+#SBATCH --nodes 6
 #SBATCH --ntasks-per-node 24
 #SBATCH --time 00:15:00
 #SBATCH --mail-type=all
@@ -16,4 +16,4 @@ ml purge
 
 ml intel impi mkl
 export OMP_NUM_THREADS=1
-mpirun -np 64 ./rayleigh.opt -nprow 8 -npcol 8
+mpirun -np 128 ./rayleigh.opt -nruns 4
