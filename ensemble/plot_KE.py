@@ -48,6 +48,7 @@ plt.legend(loc='best', shadow=True)
 plt.title('Time Trace of Kinetic Energy')
 plt.xlabel('Time')
 plt.ylabel('Energy')
+plt.yscale('log')
 
 savefile = 'KE_trace.pdf'
 print('Saving figure to: ', savefile)
